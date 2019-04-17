@@ -1,0 +1,35 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  /* color: lightgrey; */
+}
+
+#wrapper {
+  width: 1000px;
+  height: 1000px;
+  background-color: palevioletred;
+  margin: auto;
+  width: 70%;
+}
+
+#header {
+  width: 1008px;
+  height: 80px;
+  background-color: lightgray;
+}
+
+#name {
+  font-family: "Comic Sans MS";
+  float: left;
+  width: 50%;
+  height: 80px;
+  vertical-align: middle;
+}
+
+#title {
+  font-family: Arial;
+  float: left;
+  width: 50%;
+  height: 80px;
+  vertical-align: middle;
+}
