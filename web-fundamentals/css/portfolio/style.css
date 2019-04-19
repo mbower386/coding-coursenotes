@@ -4,24 +4,23 @@
   /* color: lightgrey; */
 }
 
-#wrapper {
-  width: 1000px;
+.wrapper {
+  width: 800px;
   height: 1000px;
   background-color: palevioletred;
   margin: auto;
-  width: 70%;
   background: rgb(30,15,19);
 background: radial-gradient(circle, rgba(30,15,19,1) 0%, rgba(111,89,100,1) 0%, rgba(30,15,19,1) 100%);
 }
 
-#header {
+.header {
   width: 100%;
   height: 80px;
   background-color: lightgray;
   display: cell;
 }
 
-#name {
+.name {
   font-family: "Comic Sans MS";
   float: left;
   width: 45%;
@@ -32,7 +31,7 @@ background: radial-gradient(circle, rgba(30,15,19,1) 0%, rgba(111,89,100,1) 0%, 
   font-weight: bold;
 }
 
-#title {
+.title {
   font-family: Arial;
   float: right;
   width: 50%;
@@ -42,19 +41,17 @@ background: radial-gradient(circle, rgba(30,15,19,1) 0%, rgba(111,89,100,1) 0%, 
   font-weight: bold;
 }
 
-#main-content {
-  /* background: orangered; */
+.main-content {
   width: 100%;
   height: 920px;
 }
 
-#footer {
+.footer {
   background: lightgray;
-  width: 100%;
   height: 80px;
 }
 
-#project-content {
+.project-content {
   width: 100%;
   height: 500px;
   display: table;
@@ -62,28 +59,22 @@ background: radial-gradient(circle, rgba(30,15,19,1) 0%, rgba(111,89,100,1) 0%, 
   border-spacing: 20px;
 }
 
-#about-content {
-  /* background: navy; */
+.about-content {
+  display: inline-flex;
   width: 100%;
-  height: 300px; 
-  display: inline-block;
+  height: 270px;
 }
 
-#about-pic {
-  background: lightgray;
-  width: 39%;
-  float: left;
-  height: 260px;
-  margin: 20px 10px 0px 20px; 
-  padding: 4px 4px 4px 4px;
+.about-pic {
+  width: 50%;
+  margin: 20px;
 }
 
-#about-text {
-  background: orange;
-  width: 54%;
-  float: right;
-  height: 265px;
-  margin: 20px 20px 0px 10px; 
+.about-text {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(218,204,217,1) 100%);
+  width: 50%;
+  margin:20px;
 }
 
 img {
@@ -95,8 +86,9 @@ img {
   color: white;
   background-color: gray;
   height: 40px;
-  width: 100%;
   font-size: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .project-container {
