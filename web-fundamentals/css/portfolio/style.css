@@ -91,9 +91,16 @@ background: radial-gradient(circle, rgba(30,15,19,1) 0%, rgba(111,89,100,1) 0%, 
   padding-left: 10px;
 }
 
+.big-text-box {
+  font-family: Arial;
+  font-size: 12px;
+  padding: 8px;
+}
+
 .text-box {
   font-family: Arial;
-  padding: 10px;
+  font-size: 12px;
+  padding: 8px;
 }
 
 .about-me-text {
@@ -105,4 +112,9 @@ background: radial-gradient(circle, rgba(30,15,19,1) 0%, rgba(111,89,100,1) 0%, 
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(218,204,217,1) 100%);
   height: 400px;
   display: table-cell;
+}
+
+.project-picture {
+  width: 100%;
+  height: auto;
 }
