@@ -105,12 +105,67 @@ function squares(arr) {
 }
 
 // #10:
-function negatives (arr) {
+function negatives(arr) {
   for (var i = 0; i < arr.length; i++) {
-    if () {
-      
+    if (arr[i] < 0) {
+      arr[i] = 0;
     }
-    arr[i] *= arr[i];
+  }
+
+  return arr;
+}
+
+// #11:
+function min_max_avg() {
+  var min_max_avg = [];
+  var sum = 0;
+  var min = arr[0];
+  var max = arr[0];
+  var avg = 0;
+
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] > max) {
+      arr[i] = max;
+    }
+
+    if (arr[i] < min) {
+      arr[i] = min;
+    }
+  }
+
+  avg = sum / arr.length;
+
+  min_max_avg.push(max);
+  min_max_avg.push(min);
+  min_max_avg.push(avg);
+
+  return min_max_avg;
+}
+
+// #12:
+function swap_values(arr) {
+  var i = 0;
+  var j = arr.length - 1;
+
+  while (i <= j) {
+    var temp = arr[i];
+
+    arr[i] = arr[j];
+    arr[j] = temp;
+
+    i++;
+    j--;
+  }
+
+  return arr;
+}
+
+// #13;
+function number_to_string(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] < 0) {
+      arr[i] = 'Dojo';
+    }
   }
 
   return arr;
