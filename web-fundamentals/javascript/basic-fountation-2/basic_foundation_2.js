@@ -30,3 +30,119 @@ function print_low_return_high(arr) {
 }
 
 // #3:
+function print_one_return_another(arr) {
+  var first_odd = arr[0];
+  var i = 0;
+
+  console.log(arr[arr.length - 2]);
+
+  while (first_odd % 2 === 0) {
+    if (arr[i] % 2 !== 0) {
+      first_odd = arr[i];
+    }
+
+    i++;
+  }
+
+  return first_odd;
+}
+
+// #4:
+function double_vision(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    arr[i] *= 2;
+  }
+
+  return arr;
+}
+
+// #5:
+function count_positives(arr) {
+  var count = 0;
+
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      count++;
+    }
+  }
+
+  arr[arr.length - 1] = count;
+
+  return arr;
+}
+
+// #6:
+function evens_and_odds(arr) {
+  var even_count = 0;
+  var odd_count = 0;
+
+  for (var i = 0; i < arr.length; i++) {
+    if ((odd_count <= 3) && (arr[i] % 2 !== 0)) {
+      odd_count++;
+    }
+    if (odd_count == 3) {
+      odd_count = 0;
+      console.log("That's odd!");
+    }
+
+    if ((even_count <= 3) && (arr[i] % 2 === 0)) {
+      even_count++;
+    }
+    if (even_count == 3) {
+      even_count = 0;
+      console.log("Even more so!");
+    }
+  }
+}
+
+// #7:
+function increment_the_seconds(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    if (i % 2 !== 0) {
+      arr[i]++;
+    }
+    console.log(arr[i]);
+  }
+
+  return arr;
+}
+
+// #8:
+function previousLengths(arr) {
+  for (var i = arr.length - 1; i > 0; i--) {
+    arr[i] = arr[i - 1].length;
+  }
+
+  return arr;
+}
+
+// #9:
+function addSeven(arr) {
+  var newArr = [];
+
+  for (var i = 0; i < arr.length; i++) {
+    newArr.push(arr[i] + 7);
+  }
+
+  return newArr;
+}
+
+// #10
+function reverseArray(arr) {
+  var i = 0;
+  var j = arr.length - 1;
+
+  while (i <= j) {
+    var temp = arr[i];
+
+    arr[i] = arr[j];
+    arr[j] = temp;
+
+    i++;
+    j--;
+  }
+
+  return arr;
+}
+
+// #11:
