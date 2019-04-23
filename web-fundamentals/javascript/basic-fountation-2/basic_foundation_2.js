@@ -146,3 +146,57 @@ function reverseArray(arr) {
 }
 
 // #11:
+function outlook_negative(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      arr[i] -= (arr[i] * 2);
+    }
+  }
+
+  return arr;
+}
+
+// #12:
+function always_hungry(arr) {
+  var found_food = false;
+
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] === 'food') {
+      found_food = true;
+      console.log('yummy');
+    }
+  }
+
+  if (!found_food) {
+    console.log("I'm hungry");
+  }
+}
+
+// #13:
+function swapTowardCenter(arr) {
+  var i = 0;
+  var j = arr.length - 1;
+
+  while (i <= j) {
+    var temp = arr[i];
+
+    arr[i] = arr[j];
+    arr[j] = temp;
+
+    i++;
+    j--;
+  }
+
+  console.log(arr);
+}
+
+// #14:
+function scaleArray(arr, n) {
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      arr[i] *= 3;
+    }
+  }
+
+  return arr;
+}
