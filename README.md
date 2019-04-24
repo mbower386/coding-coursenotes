@@ -1,1 +1,1 @@
-# coding-dojo-coursework
+# coding-coursework
