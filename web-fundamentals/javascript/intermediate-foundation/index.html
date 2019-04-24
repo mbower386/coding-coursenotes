@@ -92,19 +92,20 @@
     function fill(x, y, original_color, color) {
 
       //your recursion codes here
-      if (x > 8 || y > 7) {
-        
+      if (x < 0 || x >= 10 || y < 0 || y >= world.length) {
+        return false;
       }
-      else {
-
+      if (world[y][x] != original_color) {
+        return false;
       }
       world[y][x] = color;
 
       // your recursion codes here
-      fill ();
-
+      fill (x, y - 1, original_color, color);
+      fill (x, y + 1, original_color, color);
+      fill (x - 1, y, original_color, color);
+      fill (x + 1, y, original_color, color);
       drawWorld();
-
     }
 
     drawWorld();
